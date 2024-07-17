@@ -1,0 +1,30 @@
+################################################
+Send Request
+POST http://127.0.0.1:5000/category/create
+Content-Type: application/json
+
+{
+    "categoryName": "Mobile",
+    "description": "Mobile 4G 5G"
+}
+####get all products
+
+GET http://127.0.0.1:5000/category/getall
+
+################################################
+#### get product by id
+GET http://127.0.0.1:5000/category/getbyid/2
+#################################
+##### delete product by id
+
+DELETE  http://127.0.0.1:5000/category/deletebyid/2
+#################################
+##### update by id
+
+PUT  http://127.0.0.1:5000/category/deletebyid/1
+Content-Type: application/json
+
+{
+    "categoryName": "Snack",
+    "description": "Snack for fun"
+}
